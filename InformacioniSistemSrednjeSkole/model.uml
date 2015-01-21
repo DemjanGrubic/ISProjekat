@@ -2,4 +2,25 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_kLATAKGIEeSMceoaX743hg" name="model">
   <packagedElement xmi:type="uml:Actor" xmi:id="_NtK-kKGJEeSMceoaX743hg" name="Ucenik"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_oqwmYKGJEeS7icyS9VEZmQ" name="Pregled ocena"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_I-t18KGKEeSMceoaX743hg" name="" memberEnd="_I-t18aGKEeSMceoaX743hg _I-t19KGKEeSMceoaX743hg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I-t18aGKEeSMceoaX743hg" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_I-t18KGKEeSMceoaX743hg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I-t18qGKEeSMceoaX743hg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I-t186GKEeSMceoaX743hg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I-t19KGKEeSMceoaX743hg" name="pregled ocena" type="_oqwmYKGJEeS7icyS9VEZmQ" association="_I-t18KGKEeSMceoaX743hg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I-t19aGKEeSMceoaX743hg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I-t19qGKEeSMceoaX743hg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LO03YKGKEeSMceoaX743hg" name="Pregled zakazanih kontrolnih"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NCRyAKGKEeSMceoaX743hg" name="" memberEnd="_NCSZEKGKEeSMceoaX743hg _NCSZE6GKEeSMceoaX743hg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NCSZEKGKEeSMceoaX743hg" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_NCRyAKGKEeSMceoaX743hg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NCSZEaGKEeSMceoaX743hg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NCSZEqGKEeSMceoaX743hg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NCSZE6GKEeSMceoaX743hg" name="pregled zakazanih kontrolnih" type="_LO03YKGKEeSMceoaX743hg" association="_NCRyAKGKEeSMceoaX743hg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NCSZFKGKEeSMceoaX743hg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NCSZFaGKEeSMceoaX743hg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>

@@ -23,4 +23,15 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NCSZFaGKEeSMceoaX743hg" value="1"/>
     </ownedEnd>
   </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tu288KGKEeS7icyS9VEZmQ" name="Pregled izostanaka"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vrfowKGKEeS7icyS9VEZmQ" name="" memberEnd="_vrfowaGKEeS7icyS9VEZmQ _vrfoxKGKEeS7icyS9VEZmQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vrfowaGKEeS7icyS9VEZmQ" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_vrfowKGKEeS7icyS9VEZmQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vrfowqGKEeS7icyS9VEZmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vrfow6GKEeS7icyS9VEZmQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vrfoxKGKEeS7icyS9VEZmQ" name="pregled izostanaka" type="_tu288KGKEeS7icyS9VEZmQ" association="_vrfowKGKEeS7icyS9VEZmQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vrfoxaGKEeS7icyS9VEZmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vrfoxqGKEeS7icyS9VEZmQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>

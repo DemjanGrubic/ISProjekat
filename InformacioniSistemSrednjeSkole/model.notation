@@ -14,6 +14,16 @@
       <element xmi:type="uml:Actor" href="model.uml#_NtK-kKGJEeSMceoaX743hg"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Nua7wKGJEeSMceoaX743hg" x="103" y="109"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_orrMYKGJEeS7icyS9VEZmQ" type="2013">
+      <children xmi:type="notation:DecorationNode" xmi:id="_oruPsKGJEeS7icyS9VEZmQ" type="5016"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_orwE4KGJEeS7icyS9VEZmQ" type="7009">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_orwE4aGJEeS7icyS9VEZmQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_orwE4qGJEeS7icyS9VEZmQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_orwE46GJEeS7icyS9VEZmQ"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="model.uml#_oqwmYKGJEeS7icyS9VEZmQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_orrMYaGJEeS7icyS9VEZmQ" x="281" y="47" width="192" height="54"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_kOUFsaGIEeSMceoaX743hg" name="diagram_compatibility_version" stringValue="1.0.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_kOUFsqGIEeSMceoaX743hg"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_kOUFs6GIEeSMceoaX743hg">

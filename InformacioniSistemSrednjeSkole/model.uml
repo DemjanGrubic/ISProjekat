@@ -749,9 +749,15 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_xnIbEKKzEeSkWoPQDzYyZA" name="izlistajSveRazrede"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_4rgcwKKzEeSkWoPQDzYyZA" name="IzlistajSveProfesore"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-9QusKKzEeSkWoPQDzYyZA" name="izlistajSveUcenike"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_7EM9AKK0EeSkWoPQDzYyZA" name="sacuvajRazrednog"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_P-gMsKK1EeSkWoPQDzYyZA" name="sacuvajUcenika"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_RNd6MKK1EeSkWoPQDzYyZA" name="sacuvajRazred"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7EM9AKK0EeSkWoPQDzYyZA" name="sacuvajRazrednog">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_dc0roKK4EeSkWoPQDzYyZA" name="razredni" type="_qW5oAKGdEeSAztZW3n6ghQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_P-gMsKK1EeSkWoPQDzYyZA" name="sacuvajUcenika">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3jyNcKK4EeSkWoPQDzYyZA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RNd6MKK1EeSkWoPQDzYyZA" name="sacuvajRazred">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7e4KAKK4EeSkWoPQDzYyZA" name="razred" type="_u7hX0KGfEeSrtqx79RpySA"/>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_kTnogKKxEeSkWoPQDzYyZA" memberEnd="_kTnogaKxEeSkWoPQDzYyZA _kTmaYKKxEeSkWoPQDzYyZA">
     <ownedEnd xmi:type="uml:Property" xmi:id="_kTnogaKxEeSkWoPQDzYyZA" name="pravljenje odeljenja forma" type="_mziZ0KKsEeSkWoPQDzYyZA" association="_kTnogKKxEeSkWoPQDzYyZA">
@@ -768,4 +774,20 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_GQRUMKKyEeSkWoPQDzYyZA" client="_ZzKhgKKxEeSkWoPQDzYyZA" supplier="_myno8KGdEeSAztZW3n6ghQ"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_J5Em4KKyEeSkWoPQDzYyZA" client="_ZzKhgKKxEeSkWoPQDzYyZA" supplier="_okDKUKGdEeSAztZW3n6ghQ"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_VPRDEKKyEeSkWoPQDzYyZA" client="_ZzKhgKKxEeSkWoPQDzYyZA" supplier="_u7hX0KGfEeSrtqx79RpySA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cSuh8KK2EeSkWoPQDzYyZA" name="Ocene deteta kontrolor">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zn8fcKK3EeSkWoPQDzYyZA" name="izlistajSvuDecu">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JrJ38KK4EeSkWoPQDzYyZA" name="roditelj" type="_Z2J0cKJLEeS_yccMTFQkYQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3j4wkKK3EeSkWoPQDzYyZA" name="izlistajSveOcene">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WXV2sKK4EeSkWoPQDzYyZA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kVjv8KK2EeSkWoPQDzYyZA" name="Ocene deteta forma">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xwnKYKK3EeSkWoPQDzYyZA" name="odaberiDete"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_sO0LMKK2EeSkWoPQDzYyZA" client="_kVjv8KK2EeSkWoPQDzYyZA" supplier="_cSuh8KK2EeSkWoPQDzYyZA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_yU8b8KK2EeSkWoPQDzYyZA" client="_cSuh8KK2EeSkWoPQDzYyZA" supplier="_sTWtoKGdEeSAztZW3n6ghQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_3QDEAKK2EeSkWoPQDzYyZA" client="_cSuh8KK2EeSkWoPQDzYyZA" supplier="_myno8KGdEeSAztZW3n6ghQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_HDrU0KK3EeSkWoPQDzYyZA" client="_cSuh8KK2EeSkWoPQDzYyZA" supplier="_rpPlIKJXEeS_yccMTFQkYQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_YeIZgKK3EeSkWoPQDzYyZA" client="_cSuh8KK2EeSkWoPQDzYyZA" supplier="_OY9sgKJYEeS_yccMTFQkYQ"/>
 </uml:Model>

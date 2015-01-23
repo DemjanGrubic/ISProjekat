@@ -809,7 +809,7 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_G14FkKMIEeSkWoPQDzYyZA" type="_OY9sgKJYEeS_yccMTFQkYQ" direction="return"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kVjv8KK2EeSkWoPQDzYyZA" name="Ocene deteta forma">
+  <packagedElement xmi:type="uml:Class" xmi:id="_kVjv8KK2EeSkWoPQDzYyZA" name="Odabir deteta forma">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_xwnKYKK3EeSkWoPQDzYyZA" name="odaberiDete"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_sO0LMKK2EeSkWoPQDzYyZA" client="_kVjv8KK2EeSkWoPQDzYyZA" supplier="_cSuh8KK2EeSkWoPQDzYyZA"/>
@@ -875,6 +875,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_-ZxWwKMZEeSkWoPQDzYyZA" name="" type="_OY9sgKJYEeS_yccMTFQkYQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_7XErsaMiEeSkWoPQDzYyZA" name="" type="_U57QUKMiEeSkWoPQDzYyZA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_UnlGoaMjEeSkWoPQDzYyZA" name="" type="_U57QUKMiEeSkWoPQDzYyZA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9GXs0KMnEeSkWoPQDzYyZA" name="" type="_fytFEKKQEeS_buYRFkduTw"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_8kC2wKLCEeSkWoPQDzYyZA" name="" represents="_8kDd0KLCEeSkWoPQDzYyZA" coveredBy="_7lttAaMUEeSkWoPQDzYyZA _7lttAKMUEeSkWoPQDzYyZA _9CXJ0KMXEeSkWoPQDzYyZA _9CWiwKMXEeSkWoPQDzYyZA _G14SUKMYEeSkWoPQDzYyZA _9CZJkKMYEeSkWoPQDzYyZA _9CYigKMYEeSkWoPQDzYyZA _YWhpIaMZEeSkWoPQDzYyZA _YWhpIKMZEeSkWoPQDzYyZA _oM8IMKMZEeSkWoPQDzYyZA _oM7hIaMZEeSkWoPQDzYyZA _l-r8YqMjEeSkWoPQDzYyZA _l-r8YaMjEeSkWoPQDzYyZA _nutvkKMjEeSkWoPQDzYyZA _aZ2x0KMkEeSkWoPQDzYyZA _aZ2KwaMkEeSkWoPQDzYyZA _3iBa0KMkEeSkWoPQDzYyZA _s6C6EaMlEeSkWoPQDzYyZA _s6C6EKMlEeSkWoPQDzYyZA _y24r8KMlEeSkWoPQDzYyZA _BeywgaMmEeSkWoPQDzYyZA _BeywgKMmEeSkWoPQDzYyZA _GQY3QKMmEeSkWoPQDzYyZA"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_GDmhcKLDEeSkWoPQDzYyZA" name="" represents="_GDnIgKLDEeSkWoPQDzYyZA" coveredBy="_fkUJsaMSEeSkWoPQDzYyZA _fkUJsKMSEeSkWoPQDzYyZA _XBBBAKMUEeSkWoPQDzYyZA _ztnS4KMVEeSkWoPQDzYyZA _2NUPgKMVEeSkWoPQDzYyZA _3bLJwaMVEeSkWoPQDzYyZA _8MXA0KMVEeSkWoPQDzYyZA _4ErkUKMWEeSkWoPQDzYyZA _4Eq9QKMWEeSkWoPQDzYyZA _799jAKMWEeSkWoPQDzYyZA _I4kYQKMXEeSkWoPQDzYyZA _PDebUKMXEeSkWoPQDzYyZA _R6g54KMXEeSkWoPQDzYyZA _XXSEkKMXEeSkWoPQDzYyZA _MtiXUaMaEeSkWoPQDzYyZA _MtiXUKMaEeSkWoPQDzYyZA _BcdPMKMbEeSkWoPQDzYyZA _G3zdkKMbEeSkWoPQDzYyZA _M7dpIKMbEeSkWoPQDzYyZA _TDEgkKMbEeSkWoPQDzYyZA _ZXu8kKMbEeSkWoPQDzYyZA _dyKggKMbEeSkWoPQDzYyZA _hh9zEKMbEeSkWoPQDzYyZA _krBOsKMbEeSkWoPQDzYyZA _n0dr4KMbEeSkWoPQDzYyZA _qeYUcKMbEeSkWoPQDzYyZA _smFn0aMbEeSkWoPQDzYyZA _smFn0KMbEeSkWoPQDzYyZA _wSb9wKMbEeSkWoPQDzYyZA _0LGRYKMbEeSkWoPQDzYyZA _7YX2waMjEeSkWoPQDzYyZA _OVD4UKMmEeSkWoPQDzYyZA"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_GrV24KLDEeSkWoPQDzYyZA" name="" represents="_GrV24aLDEeSkWoPQDzYyZA" coveredBy="_ego4EKLDEeSkWoPQDzYyZA _egnC4KLDEeSkWoPQDzYyZA _5HVJkaMVEeSkWoPQDzYyZA _5HVJkKMVEeSkWoPQDzYyZA _8MXn4KMVEeSkWoPQDzYyZA _BIqiwaMWEeSkWoPQDzYyZA _BIqiwKMWEeSkWoPQDzYyZA _U4qigKMWEeSkWoPQDzYyZA _209-AaMYEeSkWoPQDzYyZA _K8IgkaMZEeSkWoPQDzYyZA _K8IgkKMZEeSkWoPQDzYyZA _fGzDEKMZEeSkWoPQDzYyZA _fGycAKMZEeSkWoPQDzYyZA _lud6oKMZEeSkWoPQDzYyZA _3L5a0KMZEeSkWoPQDzYyZA _nutvkaMjEeSkWoPQDzYyZA _p8-W4KMjEeSkWoPQDzYyZA _3iBa0aMkEeSkWoPQDzYyZA _V13MwqMlEeSkWoPQDzYyZA _V13MwaMlEeSkWoPQDzYyZA _aeu1UKMlEeSkWoPQDzYyZA _wevv4KMlEeSkWoPQDzYyZA _wevI0KMlEeSkWoPQDzYyZA _y26hIKMlEeSkWoPQDzYyZA _5H6lIKMlEeSkWoPQDzYyZA _GQaFYKMmEeSkWoPQDzYyZA _KnPiwKMmEeSkWoPQDzYyZA"/>
@@ -1099,7 +1100,10 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_R9XUMKMEEeSzzPsnKyQtlg" name="Azuriranje podataka">
     <extend xmi:type="uml:Extend" xmi:id="_TML3wKMEEeSzzPsnKyQtlg" extendedCase="_LwPqoKMEEeSzzPsnKyQtlg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_i8uO8KMdEeSkWoPQDzYyZA" name="Interaction2"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_i8uO8KMdEeSkWoPQDzYyZA" name="Interaction2">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ELzecaMoEeSkWoPQDzYyZA" name="" type="_udR4kKKPEeS_buYRFkduTw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_ELzecKMoEeSkWoPQDzYyZA" name="" represents="_ELzecaMoEeSkWoPQDzYyZA"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_U57QUKMiEeSkWoPQDzYyZA" name="Odabir provere znanja">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_c-_S8KMiEeSkWoPQDzYyZA" name="izaberiProveruZnanja"/>
   </packagedElement>
@@ -1114,4 +1118,20 @@
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_gStGcKMiEeSkWoPQDzYyZA" client="_U57QUKMiEeSkWoPQDzYyZA" supplier="_YVMOAKK5EeSkWoPQDzYyZA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Z_75IKMoEeSkWoPQDzYyZA" name="Odabir opcije forma">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Be4IsKMpEeSkWoPQDzYyZA" name="izaberiOcene"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EplKIKMpEeSkWoPQDzYyZA" name="izaberiUkore"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JvjlcKMpEeSkWoPQDzYyZA" name="izaberiIzostanke"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_zfAUgKMoEeSkWoPQDzYyZA" client="_Z_75IKMoEeSkWoPQDzYyZA" supplier="_cSuh8KK2EeSkWoPQDzYyZA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4nKhIKMoEeSkWoPQDzYyZA" memberEnd="_4nKhIaMoEeSkWoPQDzYyZA _4nJTAKMoEeSkWoPQDzYyZA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4nKhIaMoEeSkWoPQDzYyZA" name="odabir opcije forma" type="_Z_75IKMoEeSkWoPQDzYyZA" association="_4nKhIKMoEeSkWoPQDzYyZA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4nKhIqMoEeSkWoPQDzYyZA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4nKhI6MoEeSkWoPQDzYyZA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4nJTAKMoEeSkWoPQDzYyZA" name="odabir deteta forma" type="_kVjv8KK2EeSkWoPQDzYyZA" association="_4nKhIKMoEeSkWoPQDzYyZA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4nJTAaMoEeSkWoPQDzYyZA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4nJTAqMoEeSkWoPQDzYyZA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>

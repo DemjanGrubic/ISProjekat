@@ -830,4 +830,5 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_i1zJMKK9EeSkWoPQDzYyZA" client="_YVMOAKK5EeSkWoPQDzYyZA" supplier="_tTRAkKGfEeSrtqx79RpySA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_mSOz0KK9EeSkWoPQDzYyZA" client="_YVMOAKK5EeSkWoPQDzYyZA" supplier="_OY9sgKJYEeS_yccMTFQkYQ"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_roixMKK9EeSkWoPQDzYyZA" client="_YVMOAKK5EeSkWoPQDzYyZA" supplier="_myno8KGdEeSAztZW3n6ghQ"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_WMWDcKK_EeSkWoPQDzYyZA" name="Interaction1"/>
 </uml:Model>

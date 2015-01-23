@@ -2943,4 +2943,20 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tK9mMKK9EeSkWoPQDzYyZA" id="(0.7428571428571429,0.9302325581395349)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_XppH4KK_EeSkWoPQDzYyZA" type="PapyrusUMLSequenceDiagram" name="DijagramSekvenci" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_XppH4aK_EeSkWoPQDzYyZA" type="2001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XppH4qK_EeSkWoPQDzYyZA" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_XppH46K_EeSkWoPQDzYyZA" type="7001">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XppH5KK_EeSkWoPQDzYyZA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="model.uml#_WMWDcKK_EeSkWoPQDzYyZA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XppH5aK_EeSkWoPQDzYyZA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_XppH5qK_EeSkWoPQDzYyZA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_XppH56K_EeSkWoPQDzYyZA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_XppH6KK_EeSkWoPQDzYyZA">
+      <owner xmi:type="uml:Model" href="model.uml#_kLATAKGIEeSMceoaX743hg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="model.uml#_WMWDcKK_EeSkWoPQDzYyZA"/>
+  </notation:Diagram>
 </xmi:XMI>

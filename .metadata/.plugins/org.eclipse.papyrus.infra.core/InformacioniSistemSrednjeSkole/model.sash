@@ -6,6 +6,9 @@
         <children>
           <emfPageIdentifier href="platform:/resource/InformacioniSistemSrednjeSkole/model.notation#_kOUFsKGIEeSMceoaX743hg"/>
         </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/InformacioniSistemSrednjeSkole/model.notation#_xbXQoKGaEeSAztZW3n6ghQ"/>
+        </children>
       </children>
     </windows>
   </sashModel>

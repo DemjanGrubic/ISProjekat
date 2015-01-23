@@ -64,7 +64,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_zFkoUKGdEeSAztZW3n6ghQ" name="Sekretar">
     <generalization xmi:type="uml:Generalization" xmi:id="_scsOkKJHEeS_yccMTFQkYQ" general="_mtRNoKJHEeS_yccMTFQkYQ"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_HQJaQKJZEeS_yccMTFQkYQ" name="class1" type="_GWtQ0KJZEeS_yccMTFQkYQ" association="_HQKBUKJZEeS_yccMTFQkYQ">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HQJaQKJZEeS_yccMTFQkYQ" name="class1">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQJaQaJZEeS_yccMTFQkYQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQJaQqJZEeS_yccMTFQkYQ" value="1"/>
     </ownedAttribute>
@@ -372,20 +372,6 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_zlueEqJYEeS_yccMTFQkYQ" name="roditelj" type="_sTWtoKGdEeSAztZW3n6ghQ" association="_zlueEaJYEeS_yccMTFQkYQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zlueE6JYEeS_yccMTFQkYQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zlueFKJYEeS_yccMTFQkYQ" value="1"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_GWtQ0KJZEeS_yccMTFQkYQ" name="Zahtev za zaposljavanje">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_2tR2gKKoEeSkWoPQDzYyZA" name="cv">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5TfDwKKoEeSkWoPQDzYyZA" name="pozicija">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_HQKBUKJZEeS_yccMTFQkYQ" memberEnd="_HQKBUaJZEeS_yccMTFQkYQ _HQJaQKJZEeS_yccMTFQkYQ">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_HQKBUaJZEeS_yccMTFQkYQ" name="sekretar" type="_zFkoUKGdEeSAztZW3n6ghQ" association="_HQKBUKJZEeS_yccMTFQkYQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQKBUqJZEeS_yccMTFQkYQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQKBU6JZEeS_yccMTFQkYQ" value="1"/>
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_FNfwkKJaEeS_yccMTFQkYQ" memberEnd="_FNfwkaJaEeS_yccMTFQkYQ _FNfJgKJaEeS_yccMTFQkYQ">

@@ -10,15 +10,6 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_myno8KGdEeSAztZW3n6ghQ" name="Ucenik">
     <generalization xmi:type="uml:Generalization" xmi:id="_pIu4kKJJEeS_yccMTFQkYQ" general="_fnl5gKJJEeS_yccMTFQkYQ"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_VwocsKGfEeSrtqx79RpySA" name="ime">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_XgaYQKGfEeSrtqx79RpySA" name="prezime">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Y2yVUKGfEeSrtqx79RpySA" name="jmbg">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_hWTX8KGiEeSrtqx79RpySA" name="izostanak" type="_4jvPQKGfEeSrtqx79RpySA" association="_hWT_AKGiEeSrtqx79RpySA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWTX8aGiEeSrtqx79RpySA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hWTX8qGiEeSrtqx79RpySA" value="*"/>
@@ -54,6 +45,9 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zlt3AKJYEeS_yccMTFQkYQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zlueEKJYEeS_yccMTFQkYQ" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_W4PCcKKmEeSkWoPQDzYyZA" name="brDeceUSkoli">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_uTjq0KGdEeSAztZW3n6ghQ" name="Direktor">
     <generalization xmi:type="uml:Generalization" xmi:id="_rxtX4KJHEeS_yccMTFQkYQ" general="_mtRNoKJHEeS_yccMTFQkYQ"/>
@@ -72,11 +66,21 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QC96waJZEeS_yccMTFQkYQ" value="1"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_tTRAkKGfEeSrtqx79RpySA" name="Predmet"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tTRAkKGfEeSrtqx79RpySA" name="Predmet">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FVtxcKKnEeSkWoPQDzYyZA" name="naziv">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JdA-AKKnEeSkWoPQDzYyZA" name="opis">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_u7hX0KGfEeSrtqx79RpySA" name="Razred">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_qQ5e8KGjEeSrtqx79RpySA" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qQ7UIKGjEeSrtqx79RpySA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qQ8iQKGjEeSrtqx79RpySA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lpqZ8KKnEeSkWoPQDzYyZA" name="odeljenje">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_yTtboKGfEeSrtqx79RpySA" memberEnd="_yTtboaGfEeSrtqx79RpySA _yTpKMKGfEeSrtqx79RpySA">
@@ -89,7 +93,11 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yTpKMqGfEeSrtqx79RpySA" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_4jvPQKGfEeSrtqx79RpySA" name="Izostanak"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4jvPQKGfEeSrtqx79RpySA" name="Izostanak">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ci9JkKKmEeSkWoPQDzYyZA" name="datum">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_3RoRsKGgEeSrtqx79RpySA" memberEnd="_3RoRsaGgEeSrtqx79RpySA _3RnqoKGgEeSrtqx79RpySA">
     <ownedEnd xmi:type="uml:Property" xmi:id="_3RoRsaGgEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" aggregation="shared" association="_3RoRsKGgEeSrtqx79RpySA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3RoRsqGgEeSrtqx79RpySA" value="1"/>
@@ -137,7 +145,14 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4taBQqGiEeSrtqx79RpySA" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_-SY6gKGnEeSrtqx79RpySA" name="Ukor"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-SY6gKGnEeSrtqx79RpySA" name="Ukor">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_j1-rQKKmEeSkWoPQDzYyZA" name="razlog">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_of5csKKmEeSkWoPQDzYyZA" name="vrsta">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_Crm9gKGoEeSrtqx79RpySA" memberEnd="_Crm9gaGoEeSrtqx79RpySA _CrlvYKGoEeSrtqx79RpySA">
     <name xsi:nil="true"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Crm9gaGoEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_Crm9gKGoEeSrtqx79RpySA">
@@ -155,7 +170,14 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCzQEqGpEeSrtqx79RpySA" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kVV3wKGpEeSrtqx79RpySA" name="Vannastavna aktivnost"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kVV3wKGpEeSrtqx79RpySA" name="Vannastavna aktivnost">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eoYIgKKnEeSkWoPQDzYyZA" name="vrsta">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hQy8QKKnEeSkWoPQDzYyZA" name="raspored">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_pDjTUKGpEeSrtqx79RpySA" memberEnd="_pDjTUaGpEeSrtqx79RpySA _pDisQKGpEeSrtqx79RpySA">
     <ownedEnd xmi:type="uml:Property" xmi:id="_pDjTUaGpEeSrtqx79RpySA" name="profesor" type="_okDKUKGdEeSAztZW3n6ghQ" association="_pDjTUKGpEeSrtqx79RpySA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pDjTUqGpEeSrtqx79RpySA" value="1"/>
@@ -190,6 +212,12 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_mtRNoKJHEeS_yccMTFQkYQ" name="Zaposleni">
     <generalization xmi:type="uml:Generalization" xmi:id="_y4LrUKJHEeS_yccMTFQkYQ" general="_okDKUKGdEeSAztZW3n6ghQ"/>
     <generalization xmi:type="uml:Generalization" xmi:id="_78ddUKJJEeS_yccMTFQkYQ" general="_4NsFgKJJEeS_yccMTFQkYQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_K2Ll0KKmEeSkWoPQDzYyZA" name="godineStaza">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PHhfMKKmEeSkWoPQDzYyZA" name="funkcija">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_fnl5gKJJEeS_yccMTFQkYQ" name="Nezaposleni">
     <generalization xmi:type="uml:Generalization" xmi:id="_-A72gKJJEeS_yccMTFQkYQ" general="_4NsFgKJJEeS_yccMTFQkYQ"/>
@@ -198,7 +226,17 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FPcroaJKEeS_yccMTFQkYQ" value="1"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_4NsFgKJJEeS_yccMTFQkYQ" name="Osoba"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4NsFgKJJEeS_yccMTFQkYQ" name="Osoba">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mcdawKKlEeSkWoPQDzYyZA" name="jmbg">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qoOQkKKlEeSkWoPQDzYyZA" name="ime">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tp__gKKlEeSkWoPQDzYyZA" name="prezime">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:AssociationClass" xmi:id="_FPd5wKJKEeS_yccMTFQkYQ" name="Zakazan razgovor" memberEnd="_FPd5waJKEeS_yccMTFQkYQ _FPbdgKJKEeS_yccMTFQkYQ">
     <ownedEnd xmi:type="uml:Property" xmi:id="_FPd5waJKEeS_yccMTFQkYQ" name="nezaposleni" type="_fnl5gKJJEeS_yccMTFQkYQ" association="_FPd5wKJKEeS_yccMTFQkYQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FPd5wqJKEeS_yccMTFQkYQ" value="1"/>
@@ -225,11 +263,24 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iCNvkaJOEeS_yccMTFQkYQ" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_7edRsKJUEeS_yccMTFQkYQ" name="Molba"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7edRsKJUEeS_yccMTFQkYQ" name="Molba">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vbtYQKKmEeSkWoPQDzYyZA" name="tekst">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_rpPlIKJXEeS_yccMTFQkYQ" name="Provera znanja">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_xn1qgKJXEeS_yccMTFQkYQ" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA" association="_xn7xIKJXEeS_yccMTFQkYQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xn1qgaJXEeS_yccMTFQkYQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xn1qgqJXEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9up5cKKmEeSkWoPQDzYyZA" name="vrsta">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BDa10KKnEeSkWoPQDzYyZA" name="datum">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NKxCIKKnEeSkWoPQDzYyZA" name="oblast">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_xn7xIKJXEeS_yccMTFQkYQ" memberEnd="_xn7xIaJXEeS_yccMTFQkYQ _xn1qgKJXEeS_yccMTFQkYQ">
@@ -239,12 +290,21 @@
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:AssociationClass" xmi:id="_OY9sgKJYEeS_yccMTFQkYQ" name="Ocena" memberEnd="_OY9sgaJYEeS_yccMTFQkYQ _OYWogKJYEeS_yccMTFQkYQ">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WWULsKKnEeSkWoPQDzYyZA" name="ocena">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Z4GQYKKnEeSkWoPQDzYyZA" name="redniBroj">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
     <ownedEnd xmi:type="uml:Property" xmi:id="_OY9sgaJYEeS_yccMTFQkYQ" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_OY9sgKJYEeS_yccMTFQkYQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OY9sgqJYEeS_yccMTFQkYQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OY9sg6JYEeS_yccMTFQkYQ" value="1"/>
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:AssociationClass" xmi:id="_zlueEaJYEeS_yccMTFQkYQ" name="Opravdanje" memberEnd="_zlueEqJYEeS_yccMTFQkYQ _zltP8KJYEeS_yccMTFQkYQ">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zVZmoKKmEeSkWoPQDzYyZA" name="razlogOdsustva">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedEnd xmi:type="uml:Property" xmi:id="_zlueEqJYEeS_yccMTFQkYQ" name="roditelj" type="_sTWtoKGdEeSAztZW3n6ghQ" association="_zlueEaJYEeS_yccMTFQkYQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zlueE6JYEeS_yccMTFQkYQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zlueFKJYEeS_yccMTFQkYQ" value="1"/>

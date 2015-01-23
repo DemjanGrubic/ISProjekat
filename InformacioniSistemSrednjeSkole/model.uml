@@ -830,5 +830,15 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_i1zJMKK9EeSkWoPQDzYyZA" client="_YVMOAKK5EeSkWoPQDzYyZA" supplier="_tTRAkKGfEeSrtqx79RpySA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_mSOz0KK9EeSkWoPQDzYyZA" client="_YVMOAKK5EeSkWoPQDzYyZA" supplier="_OY9sgKJYEeS_yccMTFQkYQ"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_roixMKK9EeSkWoPQDzYyZA" client="_YVMOAKK5EeSkWoPQDzYyZA" supplier="_myno8KGdEeSAztZW3n6ghQ"/>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_WMWDcKK_EeSkWoPQDzYyZA" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_WMWDcKK_EeSkWoPQDzYyZA" name="Interaction1">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8kDd0KLCEeSkWoPQDzYyZA" name="" type="_fytFEKKQEeS_buYRFkduTw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GDnIgKLDEeSkWoPQDzYyZA" name="" type="_YVMOAKK5EeSkWoPQDzYyZA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GrV24aLDEeSkWoPQDzYyZA" name="" type="_wj84EKK5EeSkWoPQDzYyZA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_8kC2wKLCEeSkWoPQDzYyZA" name="" represents="_8kDd0KLCEeSkWoPQDzYyZA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_GDmhcKLDEeSkWoPQDzYyZA" name="" represents="_GDnIgKLDEeSkWoPQDzYyZA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_GrV24KLDEeSkWoPQDzYyZA" name="" represents="_GrV24aLDEeSkWoPQDzYyZA" coveredBy="_eggVMKLDEeSkWoPQDzYyZA _ego4EKLDEeSkWoPQDzYyZA _egnC4KLDEeSkWoPQDzYyZA"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_eggVMKLDEeSkWoPQDzYyZA" name="ActionExecSpecStart" covered="_GrV24KLDEeSkWoPQDzYyZA" execution="_egnC4KLDEeSkWoPQDzYyZA"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_egnC4KLDEeSkWoPQDzYyZA" name="ActionExecSpec" covered="_GrV24KLDEeSkWoPQDzYyZA" finish="_ego4EKLDEeSkWoPQDzYyZA" start="_eggVMKLDEeSkWoPQDzYyZA"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ego4EKLDEeSkWoPQDzYyZA" name="ActionExecSpecFinish" covered="_GrV24KLDEeSkWoPQDzYyZA" execution="_egnC4KLDEeSkWoPQDzYyZA"/>
+  </packagedElement>
 </uml:Model>

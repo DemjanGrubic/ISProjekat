@@ -931,4 +931,8 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_R9XUMKMEEeSzzPsnKyQtlg" name="Azuriranje podataka">
     <extend xmi:type="uml:Extend" xmi:id="_TML3wKMEEeSzzPsnKyQtlg" extendedCase="_LwPqoKMEEeSzzPsnKyQtlg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1a0KoKMMEeSGuqJPSnzMkQ" name="Pravljenje provere znanja">
+    <extend xmi:type="uml:Extend" xmi:id="_4xEUwKMMEeSGuqJPSnzMkQ" extendedCase="_o4Wa8KKQEeS_buYRFkduTw"/>
+    <include xmi:type="uml:Include" xmi:id="_6D-HEKMMEeSGuqJPSnzMkQ" addition="_kTcFUKKQEeS_buYRFkduTw"/>
+  </packagedElement>
 </uml:Model>

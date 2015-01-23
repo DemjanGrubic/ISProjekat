@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_kLATAKGIEeSMceoaX743hg" name="model">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NtK-kKGJEeSMceoaX743hg" name="Ucenik"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oqwmYKGJEeS7icyS9VEZmQ" name="Pregled ocena">
+    <extend xmi:type="uml:Extend" xmi:id="_0DR3wKKPEeS_buYRFkduTw" extendedCase="_wYJCwKKPEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LO03YKGKEeSMceoaX743hg" name="Pregled zakazanih provera znanja"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tu288KGKEeS7icyS9VEZmQ" name="Pregled izostanaka">
+    <extend xmi:type="uml:Extend" xmi:id="_0pMBMKKPEeS_buYRFkduTw" extendedCase="_wYJCwKKPEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_myno8KGdEeSAztZW3n6ghQ" name="Ucenik">
+    <generalization xmi:type="uml:Generalization" xmi:id="_pIu4kKJJEeS_yccMTFQkYQ" general="_fnl5gKJJEeS_yccMTFQkYQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VwocsKGfEeSrtqx79RpySA" name="ime">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XgaYQKGfEeSrtqx79RpySA" name="prezime">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Y2yVUKGfEeSrtqx79RpySA" name="jmbg">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hWTX8KGiEeSrtqx79RpySA" name="izostanak" type="_4jvPQKGfEeSrtqx79RpySA" association="_hWT_AKGiEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWTX8aGiEeSrtqx79RpySA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hWTX8qGiEeSrtqx79RpySA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_X8AyUKGjEeSrtqx79RpySA" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X8CngKGjEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X8DOkKGjEeSrtqx79RpySA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-Ff_8KGlEeSrtqx79RpySA" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-FicMKGlEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-FicMaGlEeSrtqx79RpySA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CrlvYKGoEeSrtqx79RpySA" name="ukor" type="_-SY6gKGnEeSrtqx79RpySA" association="_Crm9gKGoEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CrlvYaGoEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CrlvYqGoEeSrtqx79RpySA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__Rkp4KJHEeS_yccMTFQkYQ" name="zaposleni" type="_mtRNoKJHEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Rl4AKJHEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__RmfEKJHEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OYWogKJYEeS_yccMTFQkYQ" name="provera znanja" type="_rpPlIKJXEeS_yccMTFQkYQ" association="_OY9sgKJYEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OYX2oKJYEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYX2oaJYEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_okDKUKGdEeSAztZW3n6ghQ" name="Profesor"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qW5oAKGdEeSAztZW3n6ghQ" name="Razredni">
+    <generalization xmi:type="uml:Generalization" xmi:id="_CFCJ4KGhEeSrtqx79RpySA" general="_okDKUKGdEeSAztZW3n6ghQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sTWtoKGdEeSAztZW3n6ghQ" name="Roditelj">
+    <generalization xmi:type="uml:Generalization" xmi:id="_nUc3gKJJEeS_yccMTFQkYQ" general="_fnl5gKJJEeS_yccMTFQkYQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zltP8KJYEeS_yccMTFQkYQ" name="izostanak" type="_4jvPQKGfEeSrtqx79RpySA" association="_zlueEaJYEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zlt3AKJYEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zlueEKJYEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uTjq0KGdEeSAztZW3n6ghQ" name="Direktor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_rxtX4KJHEeS_yccMTFQkYQ" general="_mtRNoKJHEeS_yccMTFQkYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wgIQEKGdEeSAztZW3n6ghQ" name="Pedagog">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5WOAkKJZEeS_yccMTFQkYQ" general="_mtRNoKJHEeS_yccMTFQkYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zFkoUKGdEeSAztZW3n6ghQ" name="Sekretar">
+    <generalization xmi:type="uml:Generalization" xmi:id="_scsOkKJHEeS_yccMTFQkYQ" general="_mtRNoKJHEeS_yccMTFQkYQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HQJaQKJZEeS_yccMTFQkYQ" name="class1" type="_GWtQ0KJZEeS_yccMTFQkYQ" association="_HQKBUKJZEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQJaQaJZEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQJaQqJZEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QC7egKJZEeS_yccMTFQkYQ" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_QC_I4KJZEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QC96wKJZEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QC96waJZEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tTRAkKGfEeSrtqx79RpySA" name="Predmet"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_u7hX0KGfEeSrtqx79RpySA" name="Razred">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qQ5e8KGjEeSrtqx79RpySA" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qQ7UIKGjEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qQ8iQKGjEeSrtqx79RpySA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yTtboKGfEeSrtqx79RpySA" memberEnd="_yTtboaGfEeSrtqx79RpySA _yTpKMKGfEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yTtboaGfEeSrtqx79RpySA" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA" association="_yTtboKGfEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yTtboqGfEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yTtbo6GfEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yTpKMKGfEeSrtqx79RpySA" name="profesor" type="_okDKUKGdEeSAztZW3n6ghQ" association="_yTtboKGfEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yTpKMaGfEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yTpKMqGfEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4jvPQKGfEeSrtqx79RpySA" name="Izostanak"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3RoRsKGgEeSrtqx79RpySA" memberEnd="_3RoRsaGgEeSrtqx79RpySA _3RnqoKGgEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3RoRsaGgEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" aggregation="shared" association="_3RoRsKGgEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3RoRsqGgEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3RoRs6GgEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3RnqoKGgEeSrtqx79RpySA" name="razred" type="_u7hX0KGfEeSrtqx79RpySA" association="_3RoRsKGgEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3RnqoaGgEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3RnqoqGgEeSrtqx79RpySA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FbvnAKGhEeSrtqx79RpySA" memberEnd="_FbvnAaGhEeSrtqx79RpySA _FboSQKGhEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FbvnAaGhEeSrtqx79RpySA" name="razred" type="_u7hX0KGfEeSrtqx79RpySA" association="_FbvnAKGhEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbvnAqGhEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbvnA6GhEeSrtqx79RpySA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FboSQKGhEeSrtqx79RpySA" name="razredni" type="_qW5oAKGdEeSAztZW3n6ghQ" association="_FbvnAKGhEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FboSQaGhEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FboSQqGhEeSrtqx79RpySA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5ZXk0KGhEeSrtqx79RpySA" memberEnd="_5ZXk0aGhEeSrtqx79RpySA _5ZW9wKGhEeSrtqx79RpySA" navigableOwnedEnd="_5ZXk0aGhEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5ZXk0aGhEeSrtqx79RpySA" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA" association="_5ZXk0KGhEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ZXk0qGhEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ZXk06GhEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5ZW9wKGhEeSrtqx79RpySA" name="razred" type="_u7hX0KGfEeSrtqx79RpySA" association="_5ZXk0KGhEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ZW9waGhEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ZW9wqGhEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hWT_AKGiEeSrtqx79RpySA" memberEnd="_hWT_AaGiEeSrtqx79RpySA _hWTX8KGiEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hWT_AaGiEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_hWT_AKGiEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWT_AqGiEeSrtqx79RpySA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hWT_A6GiEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wJVucKGiEeSrtqx79RpySA" name="Raspored casova"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4taoUKGiEeSrtqx79RpySA" memberEnd="_4taoUaGiEeSrtqx79RpySA _4taBQKGiEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4taoUaGiEeSrtqx79RpySA" name="razred" type="_u7hX0KGfEeSrtqx79RpySA" association="_4taoUKGiEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4taoUqGiEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4taoU6GiEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4taBQKGiEeSrtqx79RpySA" name="raspored casova" type="_wJVucKGiEeSrtqx79RpySA" aggregation="composite" association="_4taoUKGiEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4taBQaGiEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4taBQqGiEeSrtqx79RpySA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-SY6gKGnEeSrtqx79RpySA" name="Ukor"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Crm9gKGoEeSrtqx79RpySA" memberEnd="_Crm9gaGoEeSrtqx79RpySA _CrlvYKGoEeSrtqx79RpySA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Crm9gaGoEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_Crm9gKGoEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Crm9gqGoEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Crm9g6GoEeSrtqx79RpySA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RCz3IKGpEeSrtqx79RpySA" memberEnd="_RCz3IaGpEeSrtqx79RpySA _RCzQEKGpEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RCz3IaGpEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_RCz3IKGpEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RCz3IqGpEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCz3I6GpEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RCzQEKGpEeSrtqx79RpySA" name="roditelj" type="_sTWtoKGdEeSAztZW3n6ghQ" association="_RCz3IKGpEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RCzQEaGpEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCzQEqGpEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kVV3wKGpEeSrtqx79RpySA" name="Vannastavna aktivnost"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pDjTUKGpEeSrtqx79RpySA" memberEnd="_pDjTUaGpEeSrtqx79RpySA _pDisQKGpEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pDjTUaGpEeSrtqx79RpySA" name="profesor" type="_okDKUKGdEeSAztZW3n6ghQ" association="_pDjTUKGpEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pDjTUqGpEeSrtqx79RpySA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pDjTU6GpEeSrtqx79RpySA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pDisQKGpEeSrtqx79RpySA" name="vannastavna aktivnost" type="_kVV3wKGpEeSrtqx79RpySA" association="_pDjTUKGpEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pDisQaGpEeSrtqx79RpySA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pDisQqGpEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CY7AIKGqEeSrtqx79RpySA" memberEnd="_CY7AIaGqEeSrtqx79RpySA _CY6ZEKGqEeSrtqx79RpySA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CY7AIaGqEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_CY7AIKGqEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CY7AIqGqEeSrtqx79RpySA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CY7AI6GqEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CY6ZEKGqEeSrtqx79RpySA" name="vannastavna aktivnost" type="_kVV3wKGpEeSrtqx79RpySA" association="_CY7AIKGqEeSrtqx79RpySA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CY6ZEaGqEeSrtqx79RpySA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CY6ZEqGqEeSrtqx79RpySA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_a-XzAKJGEeS_yccMTFQkYQ" name="Konkurs"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gkrUMKJGEeS_yccMTFQkYQ" memberEnd="_gkrUMaJGEeS_yccMTFQkYQ _gkgVEKJGEeS_yccMTFQkYQ" navigableOwnedEnd="_gkrUMaJGEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gkrUMaJGEeS_yccMTFQkYQ" name="konkurs" type="_a-XzAKJGEeS_yccMTFQkYQ" association="_gkrUMKJGEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gkrUMqJGEeS_yccMTFQkYQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gkrUM6JGEeS_yccMTFQkYQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gkgVEKJGEeS_yccMTFQkYQ" name="sekretar" type="_zFkoUKGdEeSAztZW3n6ghQ" association="_gkrUMKJGEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gkgVEaJGEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gkgVEqJGEeS_yccMTFQkYQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mtRNoKJHEeS_yccMTFQkYQ" name="Zaposleni">
+    <generalization xmi:type="uml:Generalization" xmi:id="_y4LrUKJHEeS_yccMTFQkYQ" general="_okDKUKGdEeSAztZW3n6ghQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_78ddUKJJEeS_yccMTFQkYQ" general="_4NsFgKJJEeS_yccMTFQkYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fnl5gKJJEeS_yccMTFQkYQ" name="Nezaposleni">
+    <generalization xmi:type="uml:Generalization" xmi:id="_-A72gKJJEeS_yccMTFQkYQ" general="_4NsFgKJJEeS_yccMTFQkYQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FPbdgKJKEeS_yccMTFQkYQ" name="zaposleni" type="_mtRNoKJHEeS_yccMTFQkYQ" association="_FPd5wKJKEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FPcroKJKEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FPcroaJKEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4NsFgKJJEeS_yccMTFQkYQ" name="Osoba"/>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_FPd5wKJKEeS_yccMTFQkYQ" name="Zakazan razgovor" memberEnd="_FPd5waJKEeS_yccMTFQkYQ _FPbdgKJKEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FPd5waJKEeS_yccMTFQkYQ" name="nezaposleni" type="_fnl5gKJJEeS_yccMTFQkYQ" association="_FPd5wKJKEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FPd5wqJKEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FPd5w6JKEeS_yccMTFQkYQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JDZo8KJLEeS_yccMTFQkYQ" name="Osoba"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JkNP8KJLEeS_yccMTFQkYQ" name="Zaposleni">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ebJCkKJLEeS_yccMTFQkYQ" general="_JDZo8KJLEeS_yccMTFQkYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KAZcsKJLEeS_yccMTFQkYQ" name="Nezaposleni">
+    <generalization xmi:type="uml:Generalization" xmi:id="_e9ilAKJLEeS_yccMTFQkYQ" general="_JDZo8KJLEeS_yccMTFQkYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Z2J0cKJLEeS_yccMTFQkYQ" name="Roditelj"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_n18wIKJLEeS_yccMTFQkYQ" name="Ucenik"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SsMn0KJOEeS_yccMTFQkYQ" name="Roditeljski sastanak"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iCOWoKJOEeS_yccMTFQkYQ" memberEnd="_iCOWoaJOEeS_yccMTFQkYQ _iCNIgKJOEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iCOWoaJOEeS_yccMTFQkYQ" name="Roditeljski sastanak" type="_SsMn0KJOEeS_yccMTFQkYQ" association="_iCOWoKJOEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iCOWoqJOEeS_yccMTFQkYQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iCOWo6JOEeS_yccMTFQkYQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iCNIgKJOEeS_yccMTFQkYQ" name="razred" type="_u7hX0KGfEeSrtqx79RpySA" association="_iCOWoKJOEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iCNvkKJOEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iCNvkaJOEeS_yccMTFQkYQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7edRsKJUEeS_yccMTFQkYQ" name="Molba"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rpPlIKJXEeS_yccMTFQkYQ" name="Provera znanja">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xn1qgKJXEeS_yccMTFQkYQ" name="predmet" type="_tTRAkKGfEeSrtqx79RpySA" association="_xn7xIKJXEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xn1qgaJXEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xn1qgqJXEeS_yccMTFQkYQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xn7xIKJXEeS_yccMTFQkYQ" memberEnd="_xn7xIaJXEeS_yccMTFQkYQ _xn1qgKJXEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xn7xIaJXEeS_yccMTFQkYQ" name="provera znanja" type="_rpPlIKJXEeS_yccMTFQkYQ" association="_xn7xIKJXEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xn7xIqJXEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xn7xI6JXEeS_yccMTFQkYQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_OY9sgKJYEeS_yccMTFQkYQ" name="Ocena" memberEnd="_OY9sgaJYEeS_yccMTFQkYQ _OYWogKJYEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OY9sgaJYEeS_yccMTFQkYQ" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_OY9sgKJYEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OY9sgqJYEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OY9sg6JYEeS_yccMTFQkYQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_zlueEaJYEeS_yccMTFQkYQ" name="Opravdanje" memberEnd="_zlueEqJYEeS_yccMTFQkYQ _zltP8KJYEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zlueEqJYEeS_yccMTFQkYQ" name="roditelj" type="_sTWtoKGdEeSAztZW3n6ghQ" association="_zlueEaJYEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zlueE6JYEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zlueFKJYEeS_yccMTFQkYQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GWtQ0KJZEeS_yccMTFQkYQ" name="Zahtev za zaposljavanje"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HQKBUKJZEeS_yccMTFQkYQ" memberEnd="_HQKBUaJZEeS_yccMTFQkYQ _HQJaQKJZEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HQKBUaJZEeS_yccMTFQkYQ" name="sekretar" type="_zFkoUKGdEeSAztZW3n6ghQ" association="_HQKBUKJZEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQKBUqJZEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQKBU6JZEeS_yccMTFQkYQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_QC_I4KJZEeS_yccMTFQkYQ" name="Zahtev za izbacivanje ucenika" memberEnd="_QC_I4aJZEeS_yccMTFQkYQ _QC7egKJZEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QC_I4aJZEeS_yccMTFQkYQ" name="sekretar" type="_zFkoUKGdEeSAztZW3n6ghQ" association="_QC_I4KJZEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QC_I4qJZEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QC_I46JZEeS_yccMTFQkYQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FNfwkKJaEeS_yccMTFQkYQ" memberEnd="_FNfwkaJaEeS_yccMTFQkYQ _FNfJgKJaEeS_yccMTFQkYQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FNfwkaJaEeS_yccMTFQkYQ" name="nezaposleni" type="_fnl5gKJJEeS_yccMTFQkYQ" association="_FNfwkKJaEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FNfwkqJaEeS_yccMTFQkYQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FNfwk6JaEeS_yccMTFQkYQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FNfJgKJaEeS_yccMTFQkYQ" name="molba" type="_7edRsKJUEeS_yccMTFQkYQ" association="_FNfwkKJaEeS_yccMTFQkYQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FNfJgaJaEeS_yccMTFQkYQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FNfJgqJaEeS_yccMTFQkYQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_IxVC4KKKEeS_buYRFkduTw" name="Lista svih konkursa"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PdGXUKKKEeS_buYRFkduTw" name="Pregled pojedinacnog konkursa">
+    <extend xmi:type="uml:Extend" xmi:id="_SU-jYKKKEeS_buYRFkduTw" extendedCase="_IxVC4KKKEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jY_eAKKKEeS_buYRFkduTw" name="Pregled ukora">
+    <extend xmi:type="uml:Extend" xmi:id="_1TFSwKKPEeS_buYRFkduTw" extendedCase="_wYJCwKKPEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m8VB4KKKEeS_buYRFkduTw" name="Pregled vannastavnih aktivnosti"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_rmec0KKKEeS_buYRFkduTw" name="Prijava za vannastavnu aktivnost">
+    <extend xmi:type="uml:Extend" xmi:id="_3dwz4KKKEeS_buYRFkduTw" extendedCase="_zFcv0KKKEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_zFcv0KKKEeS_buYRFkduTw" name="Pregled pojedinacne vannastavne aktivnosti">
+    <extend xmi:type="uml:Extend" xmi:id="_2jSvsKKKEeS_buYRFkduTw" extendedCase="_m8VB4KKKEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5ByLYKKKEeS_buYRFkduTw" name="Pregled zakazanih razgovora"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Aq-xYKKLEeS_buYRFkduTw" name="Podnosenje molbi"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_lkzY0KKLEeS_buYRFkduTw" name="Zakazivanje razgovora">
+    <extend xmi:type="uml:Extend" xmi:id="_zjLGQKKNEeS_buYRFkduTw" extendedCase="_5ByLYKKKEeS_buYRFkduTw"/>
+    <include xmi:type="uml:Include" xmi:id="_8Wk4wKKREeS_buYRFkduTw" addition="_6oXDcKKREeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZVji0KKNEeS_buYRFkduTw" name="Pregled raspored casova"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_a0vdoKKNEeS_buYRFkduTw" name="" memberEnd="_a0vdoaKNEeS_buYRFkduTw _a0vdpKKNEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_a0vdoaKNEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_a0vdoKKNEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a0vdoqKNEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a0vdo6KNEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_a0vdpKKNEeS_buYRFkduTw" name="pregled raspored casova" type="_ZVji0KKNEeS_buYRFkduTw" association="_a0vdoKKNEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a0vdpaKNEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a0vdpqKNEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JRSjEKKPEeS_buYRFkduTw" name="" memberEnd="_JRSjEaKPEeS_buYRFkduTw _JRSjFKKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JRSjEaKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_JRSjEKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JRSjEqKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JRSjE6KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JRSjFKKPEeS_buYRFkduTw" name="pregled ocena" type="_oqwmYKGJEeS7icyS9VEZmQ" association="_JRSjEKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JRSjFaKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JRSjFqKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K_z6YKKPEeS_buYRFkduTw" name="" memberEnd="_K_z6YaKPEeS_buYRFkduTw _K_z6ZKKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K_z6YaKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_K_z6YKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K_z6YqKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K_z6Y6KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K_z6ZKKPEeS_buYRFkduTw" name="pregled izostanaka" type="_tu288KGKEeS7icyS9VEZmQ" association="_K_z6YKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K_z6ZaKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K_z6ZqKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_L28WsKKPEeS_buYRFkduTw" name="" memberEnd="_L28WsaKPEeS_buYRFkduTw _L28WtKKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_L28WsaKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_L28WsKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L28WsqKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L28Ws6KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_L28WtKKPEeS_buYRFkduTw" name="pregled ukora" type="_jY_eAKKKEeS_buYRFkduTw" association="_L28WsKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L28WtaKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L28WtqKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RqXt4KKPEeS_buYRFkduTw" name="" memberEnd="_RqXt4aKPEeS_buYRFkduTw _RqXt5KKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RqXt4aKPEeS_buYRFkduTw" name="podnosenje molbi" type="_Aq-xYKKLEeS_buYRFkduTw" association="_RqXt4KKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RqXt4qKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RqXt46KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RqXt5KKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_RqXt4KKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RqXt5aKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RqXt5qKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SgF08KKPEeS_buYRFkduTw" name="" memberEnd="_SgF08aKPEeS_buYRFkduTw _SgF09KKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SgF08aKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_SgF08KKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SgF08qKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SgF086KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SgF09KKPEeS_buYRFkduTw" name="pregled vannastavnih aktivnosti" type="_m8VB4KKKEeS_buYRFkduTw" association="_SgF08KKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SgF09aKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SgF09qKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UlnXAKKPEeS_buYRFkduTw" name="" memberEnd="_UlnXAaKPEeS_buYRFkduTw _UlnXBKKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UlnXAaKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_UlnXAKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UlnXAqKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UlnXA6KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UlnXBKKPEeS_buYRFkduTw" name="pregled zakazanih razgovora" type="_5ByLYKKKEeS_buYRFkduTw" association="_UlnXAKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UlnXBaKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UlnXBqKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VTeikKKPEeS_buYRFkduTw" name="" memberEnd="_VTeikaKPEeS_buYRFkduTw _VTeilKKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VTeikaKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_VTeikKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VTeikqKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VTeik6KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VTeilKKPEeS_buYRFkduTw" name="pregled zakazanih kontrolnih" type="_LO03YKGKEeSMceoaX743hg" association="_VTeikKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VTeilaKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VTeilqKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XIKMQKKPEeS_buYRFkduTw" name="" memberEnd="_XIKMQaKPEeS_buYRFkduTw _XIKMRKKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XIKMQaKPEeS_buYRFkduTw" name="ucenik" type="_NtK-kKGJEeSMceoaX743hg" association="_XIKMQKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIKMQqKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XIKMQ6KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XIKMRKKPEeS_buYRFkduTw" name="lista svih konkursa" type="_IxVC4KKKEeS_buYRFkduTw" association="_XIKMQKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIKMRaKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XIKMRqKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_udR4kKKPEeS_buYRFkduTw" name="Roditelj"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_wYJCwKKPEeS_buYRFkduTw" name="Odabir deteta"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xqCvgKKPEeS_buYRFkduTw" name="" memberEnd="_xqCvgaKPEeS_buYRFkduTw _xqCvhKKPEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xqCvgaKPEeS_buYRFkduTw" name="roditelj" type="_udR4kKKPEeS_buYRFkduTw" association="_xqCvgKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqCvgqKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqCvg6KPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xqCvhKKPEeS_buYRFkduTw" name="odabir deteta" type="_wYJCwKKPEeS_buYRFkduTw" association="_xqCvgKKPEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqCvhaKPEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqCvhqKPEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4hVXcKKPEeS_buYRFkduTw" name="Opravdanje izostanka">
+    <extend xmi:type="uml:Extend" xmi:id="_9cMu8KKPEeS_buYRFkduTw" extendedCase="_tu288KGKEeS7icyS9VEZmQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FbT6kKKQEeS_buYRFkduTw" name="" memberEnd="_FbT6kaKQEeS_buYRFkduTw _FbT6lKKQEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FbT6kaKQEeS_buYRFkduTw" name="roditelj" type="_udR4kKKPEeS_buYRFkduTw" association="_FbT6kKKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbT6kqKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbT6k6KQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FbT6lKKQEeS_buYRFkduTw" name="pregled zakazanih razgovora" type="_5ByLYKKKEeS_buYRFkduTw" association="_FbT6kKKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbT6laKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbT6lqKQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NQDCMKKQEeS_buYRFkduTw" name="" memberEnd="_NQDCMaKQEeS_buYRFkduTw _NQDCNKKQEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NQDCMaKQEeS_buYRFkduTw" name="roditelj" type="_udR4kKKPEeS_buYRFkduTw" association="_NQDCMKKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NQDCMqKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NQDCM6KQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NQDCNKKQEeS_buYRFkduTw" name="podnosenje molbi" type="_Aq-xYKKLEeS_buYRFkduTw" association="_NQDCMKKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NQDCNaKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NQDCNqKQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_fytFEKKQEeS_buYRFkduTw" name="Profesor"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jcufwKKQEeS_buYRFkduTw" name="Unos ocene">
+    <include xmi:type="uml:Include" xmi:id="_CkN8MKKREeS_buYRFkduTw" addition="_o4Wa8KKQEeS_buYRFkduTw"/>
+    <include xmi:type="uml:Include" xmi:id="_DaZWQKKREeS_buYRFkduTw" addition="_kTcFUKKQEeS_buYRFkduTw"/>
+    <include xmi:type="uml:Include" xmi:id="_EA9nAKKREeS_buYRFkduTw" addition="_mpcTYKKQEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kTcFUKKQEeS_buYRFkduTw" name="Odabir predmeta"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mpcTYKKQEeS_buYRFkduTw" name="Odabir ucenika"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_o4Wa8KKQEeS_buYRFkduTw" name="Odabir provere znanja"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_t2SUkKKQEeS_buYRFkduTw" name="" memberEnd="_t2SUkaKQEeS_buYRFkduTw _t2SUlKKQEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t2SUkaKQEeS_buYRFkduTw" name="profesor" type="_fytFEKKQEeS_buYRFkduTw" association="_t2SUkKKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2SUkqKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2SUk6KQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t2SUlKKQEeS_buYRFkduTw" name="unos ocene" type="_jcufwKKQEeS_buYRFkduTw" association="_t2SUkKKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t2SUlaKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t2SUlqKQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_xvpy0KKQEeS_buYRFkduTw" name="Unos izostanka">
+    <include xmi:type="uml:Include" xmi:id="_Eri1EKKREeS_buYRFkduTw" addition="_mpcTYKKQEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4V344KKQEeS_buYRFkduTw" name="" memberEnd="_4V344aKQEeS_buYRFkduTw _4V345KKQEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4V344aKQEeS_buYRFkduTw" name="profesor" type="_fytFEKKQEeS_buYRFkduTw" association="_4V344KKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4V344qKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4V3446KQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4V345KKQEeS_buYRFkduTw" name="unos izostanka" type="_xvpy0KKQEeS_buYRFkduTw" association="_4V344KKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4V345aKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4V345qKQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7BaSEKKQEeS_buYRFkduTw" name="Unos predloga za ukor">
+    <include xmi:type="uml:Include" xmi:id="_AXcioKKREeS_buYRFkduTw" addition="_mpcTYKKQEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-pLC8KKQEeS_buYRFkduTw" name="" memberEnd="_-pLC8aKQEeS_buYRFkduTw _-pLC9KKQEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-pLC8aKQEeS_buYRFkduTw" name="profesor" type="_fytFEKKQEeS_buYRFkduTw" association="_-pLC8KKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-pLC8qKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-pLC86KQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-pLC9KKQEeS_buYRFkduTw" name="unos predloga za ukor" type="_7BaSEKKQEeS_buYRFkduTw" association="_-pLC8KKQEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-pLC9aKQEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-pLC9qKQEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HTUIkKKREeS_buYRFkduTw" name="Unos provere znanja">
+    <include xmi:type="uml:Include" xmi:id="_MyYZUKKREeS_buYRFkduTw" addition="_kTcFUKKQEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IsfiAKKREeS_buYRFkduTw" name="" memberEnd="_IsfiAaKREeS_buYRFkduTw _IsfiBKKREeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IsfiAaKREeS_buYRFkduTw" name="profesor" type="_fytFEKKQEeS_buYRFkduTw" association="_IsfiAKKREeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IsfiAqKREeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IsfiA6KREeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IsfiBKKREeS_buYRFkduTw" name="unos provere znanja" type="_HTUIkKKREeS_buYRFkduTw" association="_IsfiAKKREeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IsfiBaKREeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IsfiBqKREeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WDmGAKKREeS_buYRFkduTw" name="Pravljenje rasporeda casova"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XdzaMKKREeS_buYRFkduTw" name="" memberEnd="_XdzaMaKREeS_buYRFkduTw _XdzaNKKREeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XdzaMaKREeS_buYRFkduTw" name="profesor" type="_fytFEKKQEeS_buYRFkduTw" association="_XdzaMKKREeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XdzaMqKREeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XdzaM6KREeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XdzaNKKREeS_buYRFkduTw" name="pravljenje rasporeda casova" type="_WDmGAKKREeS_buYRFkduTw" association="_XdzaMKKREeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XdzaNaKREeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XdzaNqKREeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_maGaYKKREeS_buYRFkduTw" name="Unos plana rada">
+    <include xmi:type="uml:Include" xmi:id="_o1YxEKKREeS_buYRFkduTw" addition="_kTcFUKKQEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_npDg0KKREeS_buYRFkduTw" name="" memberEnd="_npDg0aKREeS_buYRFkduTw _npDg1KKREeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_npDg0aKREeS_buYRFkduTw" name="profesor" type="_fytFEKKQEeS_buYRFkduTw" association="_npDg0KKREeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_npDg0qKREeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_npDg06KREeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_npDg1KKREeS_buYRFkduTw" name="unos plana rada" type="_maGaYKKREeS_buYRFkduTw" association="_npDg0KKREeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_npDg1aKREeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_npDg1qKREeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6oXDcKKREeS_buYRFkduTw" name="Odabir osobe"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QAkXIKKSEeS_buYRFkduTw" name="Pravljenje vannastavne aktivnosti">
+    <include xmi:type="uml:Include" xmi:id="_T0dfgKKSEeS_buYRFkduTw" addition="_kTcFUKKQEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_S3DcEKKSEeS_buYRFkduTw" name="" memberEnd="_S3DcEaKSEeS_buYRFkduTw _S3DcFKKSEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_S3DcEaKSEeS_buYRFkduTw" name="profesor" type="_fytFEKKQEeS_buYRFkduTw" association="_S3DcEKKSEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S3DcEqKSEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S3DcE6KSEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_S3DcFKKSEeS_buYRFkduTw" name="pravljenje vannastavne aktivnosti" type="_QAkXIKKSEeS_buYRFkduTw" association="_S3DcEKKSEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S3DcFaKSEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S3DcFqKSEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ZvU7cKKSEeS_buYRFkduTw" name="Razredni">
+    <generalization xmi:type="uml:Generalization" xmi:id="_csLHEKKSEeS_buYRFkduTw" general="_fytFEKKQEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fI2k4KKSEeS_buYRFkduTw" name="Pregled predloga ukora"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hHHoYKKSEeS_buYRFkduTw" name="" memberEnd="_hHHoYaKSEeS_buYRFkduTw _hHHoZKKSEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hHHoYaKSEeS_buYRFkduTw" name="razredni" type="_ZvU7cKKSEeS_buYRFkduTw" association="_hHHoYKKSEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hHHoYqKSEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hHHoY6KSEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hHHoZKKSEeS_buYRFkduTw" name="pregled ukora" type="_fI2k4KKSEeS_buYRFkduTw" association="_hHHoYKKSEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hHHoZaKSEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hHHoZqKSEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_inoY4KKSEeS_buYRFkduTw" name="Usvajanje ukora">
+    <extend xmi:type="uml:Extend" xmi:id="_nU9DoKKSEeS_buYRFkduTw" extendedCase="_fI2k4KKSEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pNeEcKKSEeS_buYRFkduTw" name="Zakazivanje roditeljskih"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rkfmMKKSEeS_buYRFkduTw" name="" memberEnd="_rkfmMaKSEeS_buYRFkduTw _rkfmNKKSEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rkfmMaKSEeS_buYRFkduTw" name="zakazivanje roditeljskih" type="_pNeEcKKSEeS_buYRFkduTw" association="_rkfmMKKSEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rkfmMqKSEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rkfmM6KSEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rkfmNKKSEeS_buYRFkduTw" name="razredni" type="_ZvU7cKKSEeS_buYRFkduTw" association="_rkfmMKKSEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rkfmNaKSEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rkfmNqKSEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_69qvoKKSEeS_buYRFkduTw" name="Direktor"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_CFg8EKKTEeS_buYRFkduTw" name="Pregled molbi"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EMZwEKKTEeS_buYRFkduTw" name="" memberEnd="_EMZwEaKTEeS_buYRFkduTw _EMZwFKKTEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EMZwEaKTEeS_buYRFkduTw" name="direktor" type="_69qvoKKSEeS_buYRFkduTw" association="_EMZwEKKTEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EMZwEqKTEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EMZwE6KTEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EMZwFKKTEeS_buYRFkduTw" name="pregled molbi" type="_CFg8EKKTEeS_buYRFkduTw" association="_EMZwEKKTEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EMZwFaKTEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EMZwFqKTEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_E1xdMKKTEeS_buYRFkduTw" name="Odgovaranje na molbe">
+    <extend xmi:type="uml:Extend" xmi:id="_Gwe2YKKTEeS_buYRFkduTw" extendedCase="_CFg8EKKTEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_r18tIKKTEeS_buYRFkduTw" name="Pregled zahteva za zaposlenje"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_t5xmEKKTEeS_buYRFkduTw" name="Odgovaranje na zahtev za zaposlenje">
+    <extend xmi:type="uml:Extend" xmi:id="_xEqNsKKTEeS_buYRFkduTw" extendedCase="_r18tIKKTEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wJAdwKKTEeS_buYRFkduTw" name="" memberEnd="_wJAdwaKTEeS_buYRFkduTw _wJAdxKKTEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wJAdwaKTEeS_buYRFkduTw" name="direktor" type="_69qvoKKSEeS_buYRFkduTw" association="_wJAdwKKTEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJAdwqKTEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJAdw6KTEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wJAdxKKTEeS_buYRFkduTw" name="pregled zahteva za zaposlenje" type="_r18tIKKTEeS_buYRFkduTw" association="_wJAdwKKTEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJAdxaKTEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJAdxqKTEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_yWmWsKKTEeS_buYRFkduTw" name="Pregled zahteva za izbacivanje"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1GgSgKKTEeS_buYRFkduTw" name="" memberEnd="_1GgSgaKTEeS_buYRFkduTw _1GgShKKTEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1GgSgaKTEeS_buYRFkduTw" name="pregled zahteva za izbacivanje" type="_yWmWsKKTEeS_buYRFkduTw" association="_1GgSgKKTEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1GgSgqKTEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1GgSg6KTEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1GgShKKTEeS_buYRFkduTw" name="direktor" type="_69qvoKKSEeS_buYRFkduTw" association="_1GgSgKKTEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1GgShaKTEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1GgShqKTEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_14aQkKKTEeS_buYRFkduTw" name="Odgovor na zahtev za izbacivanje">
+    <extend xmi:type="uml:Extend" xmi:id="_4WbLIKKTEeS_buYRFkduTw" extendedCase="_yWmWsKKTEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_fu178KKUEeS_buYRFkduTw" name="Sekretar"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_u5pSMKKUEeS_buYRFkduTw" name="Pregled konkursa"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wLPc8KKUEeS_buYRFkduTw" name="" memberEnd="_wLPc8aKUEeS_buYRFkduTw _wLPc9KKUEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wLPc8aKUEeS_buYRFkduTw" name="sekretar" type="_fu178KKUEeS_buYRFkduTw" association="_wLPc8KKUEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wLPc8qKUEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wLPc86KUEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wLPc9KKUEeS_buYRFkduTw" name="pregled konkursa" type="_u5pSMKKUEeS_buYRFkduTw" association="_wLPc8KKUEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wLPc9aKUEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wLPc9qKUEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4buscKKUEeS_buYRFkduTw" name="Unos novog konkursa konkursa">
+    <extend xmi:type="uml:Extend" xmi:id="_555TkKKUEeS_buYRFkduTw" extendedCase="_u5pSMKKUEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_9pqw8KKUEeS_buYRFkduTw" name="Unos ucenika i roditelja"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__ZRGUKKUEeS_buYRFkduTw" name="" memberEnd="__ZRGUaKUEeS_buYRFkduTw __ZRGVKKUEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="__ZRGUaKUEeS_buYRFkduTw" name="unos ucenika i roditelja" type="_9pqw8KKUEeS_buYRFkduTw" association="__ZRGUKKUEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ZRGUqKUEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ZRGU6KUEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__ZRGVKKUEeS_buYRFkduTw" name="sekretar" type="_fu178KKUEeS_buYRFkduTw" association="__ZRGUKKUEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ZRGVaKUEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ZRGVqKUEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_AreVEKKVEeS_buYRFkduTw" name="Pravljenje odeljenja">
+    <include xmi:type="uml:Include" xmi:id="_G1zwYKKVEeS_buYRFkduTw" addition="_ChSAIKKVEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ChSAIKKVEeS_buYRFkduTw" name="Odabir razrednog"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Ef2loKKVEeS_buYRFkduTw" name="Odabir ucenika">
+    <extend xmi:type="uml:Extend" xmi:id="_HieCEKKVEeS_buYRFkduTw" extendedCase="_AreVEKKVEeS_buYRFkduTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IY1pYKKVEeS_buYRFkduTw" name="" memberEnd="_IY1pYaKVEeS_buYRFkduTw _IY1pZKKVEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IY1pYaKVEeS_buYRFkduTw" name="pravljenje odeljenja" type="_AreVEKKVEeS_buYRFkduTw" association="_IY1pYKKVEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IY1pYqKVEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IY1pY6KVEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IY1pZKKVEeS_buYRFkduTw" name="sekretar" type="_fu178KKUEeS_buYRFkduTw" association="_IY1pYKKVEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IY1pZaKVEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IY1pZqKVEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_MmYn4KKVEeS_buYRFkduTw" name="Pedagog"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2dsdAKKVEeS_buYRFkduTw" name="Pregled ukora"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4XCkQKKVEeS_buYRFkduTw" name="" memberEnd="_4XCkQaKVEeS_buYRFkduTw _4XCkRKKVEeS_buYRFkduTw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4XCkQaKVEeS_buYRFkduTw" name="pedagog" type="_MmYn4KKVEeS_buYRFkduTw" association="_4XCkQKKVEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4XCkQqKVEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4XCkQ6KVEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4XCkRKKVEeS_buYRFkduTw" name="pregled ukora" type="_2dsdAKKVEeS_buYRFkduTw" association="_4XCkQKKVEeS_buYRFkduTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4XCkRaKVEeS_buYRFkduTw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4XCkRqKVEeS_buYRFkduTw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

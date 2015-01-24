@@ -1407,4 +1407,18 @@
   <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_WabcUKN7EeSKGNB_PqOnow" name="Realization4" client="_aC2u0KNrEeSKGNB_PqOnow" supplier="_ibkvcKN6EeSKGNB_PqOnow" contract="_ibkvcKN6EeSKGNB_PqOnow"/>
   <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_W-xfgKN7EeSKGNB_PqOnow" name="Realization5" client="_aC2u0KNrEeSKGNB_PqOnow" supplier="_iwX6wKN6EeSKGNB_PqOnow" contract="_iwX6wKN6EeSKGNB_PqOnow"/>
   <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_XbWGwKN7EeSKGNB_PqOnow" name="Realization6" client="_aC2u0KNrEeSKGNB_PqOnow" supplier="_h9UGIKN6EeSKGNB_PqOnow" contract="_h9UGIKN6EeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vnP2AKO7EeSJMspU-yXrXQ" name="Odabir ucenika - deteta">
+    <extend xmi:type="uml:Extend" xmi:id="_zDxnQKO7EeSJMspU-yXrXQ" extendedCase="_8mNzEKKYEeScWMys5vb-Rw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_B4wegKO8EeSJMspU-yXrXQ" name="Unos profesora"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DmEU4KO8EeSJMspU-yXrXQ" name="" memberEnd="_DmEU4aO8EeSJMspU-yXrXQ _DmEU5KO8EeSJMspU-yXrXQ">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DmEU4aO8EeSJMspU-yXrXQ" name="sekretar" type="_fu178KKUEeS_buYRFkduTw" association="_DmEU4KO8EeSJMspU-yXrXQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DmEU4qO8EeSJMspU-yXrXQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DmEU46O8EeSJMspU-yXrXQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DmEU5KO8EeSJMspU-yXrXQ" name="unos profesora" type="_B4wegKO8EeSJMspU-yXrXQ" association="_DmEU4KO8EeSJMspU-yXrXQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DmEU5aO8EeSJMspU-yXrXQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DmEU5qO8EeSJMspU-yXrXQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>

@@ -1385,4 +1385,26 @@
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_cTPBYKM8EeSs8cwP5-I1xQ" client="_E1aFAKM8EeSs8cwP5-I1xQ" supplier="_ZzKhgKKxEeSkWoPQDzYyZA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_aC2u0KNrEeSKGNB_PqOnow" name="Baza podataka"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_revW4KNrEeSKGNB_PqOnow" name="GUI"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_-oTW0KNtEeSKGNB_PqOnow" name="Usage0" client="_revW4KNrEeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_BRLdkKNuEeSKGNB_PqOnow" name="Realization0" client="_revW4KNrEeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:Substitution" xmi:id="_Fxb8sKNuEeSKGNB_PqOnow" client="_revW4KNrEeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_dgjn8KNvEeSKGNB_PqOnow" name="WebInterfejs"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_2u_NAKN0EeSKGNB_PqOnow" name="Usage1" client="_revW4KNrEeSKGNB_PqOnow" supplier="_dgjn8KNvEeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_B-BRQKN1EeSKGNB_PqOnow" name="Vodeci kadar"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Cr_xkKN1EeSKGNB_PqOnow" name="Strucni kadar"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Dk69oKN1EeSKGNB_PqOnow" name="Vanskolsko osoblje"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_JYdswKN5EeSKGNB_PqOnow" name="Realization1" client="_B-BRQKN1EeSKGNB_PqOnow" supplier="_dgjn8KNvEeSKGNB_PqOnow" contract="_dgjn8KNvEeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_J5L0MKN5EeSKGNB_PqOnow" name="Realization2" client="_Cr_xkKN1EeSKGNB_PqOnow" supplier="_dgjn8KNvEeSKGNB_PqOnow" contract="_dgjn8KNvEeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_KcRTIKN5EeSKGNB_PqOnow" name="Realization3" client="_Dk69oKN1EeSKGNB_PqOnow" supplier="_dgjn8KNvEeSKGNB_PqOnow" contract="_dgjn8KNvEeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_h9UGIKN6EeSKGNB_PqOnow" name="Azuriranje zaposlenih"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ibkvcKN6EeSKGNB_PqOnow" name="Azuriranje vanskolskog osoblja"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_iwX6wKN6EeSKGNB_PqOnow" name="Pregledi i zakazivanja"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QV5uEKN7EeSKGNB_PqOnow" name="Usage2" client="_B-BRQKN1EeSKGNB_PqOnow" supplier="_h9UGIKN6EeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_SiStIKN7EeSKGNB_PqOnow" name="Usage3" client="_Cr_xkKN1EeSKGNB_PqOnow" supplier="_ibkvcKN6EeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_TGJoIKN7EeSKGNB_PqOnow" name="Usage4" client="_Dk69oKN1EeSKGNB_PqOnow" supplier="_iwX6wKN6EeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_WabcUKN7EeSKGNB_PqOnow" name="Realization4" client="_aC2u0KNrEeSKGNB_PqOnow" supplier="_ibkvcKN6EeSKGNB_PqOnow" contract="_ibkvcKN6EeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_W-xfgKN7EeSKGNB_PqOnow" name="Realization5" client="_aC2u0KNrEeSKGNB_PqOnow" supplier="_iwX6wKN6EeSKGNB_PqOnow" contract="_iwX6wKN6EeSKGNB_PqOnow"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_XbWGwKN7EeSKGNB_PqOnow" name="Realization6" client="_aC2u0KNrEeSKGNB_PqOnow" supplier="_h9UGIKN6EeSKGNB_PqOnow" contract="_h9UGIKN6EeSKGNB_PqOnow"/>
 </uml:Model>

@@ -1169,7 +1169,7 @@
     <message xmi:type="uml:Message" xmi:id="_8plsYKM2EeSkWoPQDzYyZA" name="void" messageSort="reply" receiveEvent="_8pnhkKM2EeSkWoPQDzYyZA" sendEvent="_8pm6gKM2EeSkWoPQDzYyZA"/>
     <message xmi:type="uml:Message" xmi:id="_FpIaQKM3EeSkWoPQDzYyZA" name="Ocene" messageSort="reply" receiveEvent="_FpK2gKM3EeSkWoPQDzYyZA" sendEvent="_FpJoYKM3EeSkWoPQDzYyZA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_U57QUKMiEeSkWoPQDzYyZA" name="Odabir provere znanja">
+  <packagedElement xmi:type="uml:Class" xmi:id="_U57QUKMiEeSkWoPQDzYyZA" name="Odabir provere znanja forma">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_c-_S8KMiEeSkWoPQDzYyZA" name="izaberiProveruZnanja"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_ZKefg6MiEeSkWoPQDzYyZA" memberEnd="_ZKefhKMiEeSkWoPQDzYyZA _ZKefgKMiEeSkWoPQDzYyZA">

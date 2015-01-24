@@ -155,7 +155,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_hWT_AKGiEeSrtqx79RpySA" memberEnd="_hWT_AaGiEeSrtqx79RpySA _hWTX8KGiEeSrtqx79RpySA">
     <ownedEnd xmi:type="uml:Property" xmi:id="_hWT_AaGiEeSrtqx79RpySA" name="ucenik" type="_myno8KGdEeSAztZW3n6ghQ" association="_hWT_AKGiEeSrtqx79RpySA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWT_AqGiEeSrtqx79RpySA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWT_AqGiEeSrtqx79RpySA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hWT_A6GiEeSrtqx79RpySA" value="*"/>
     </ownedEnd>
   </packagedElement>
